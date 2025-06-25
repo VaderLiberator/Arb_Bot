@@ -1,0 +1,17 @@
+[project]
+name = "arb_bot"        # Название пакета
+version = "0.1.0"      # Версия приложения
+description = "Асинхронный арбитражный мини‑бот на FastAPI и asyncio"
+dependencies = [       # Зависимости проекта
+  "fastapi",
+  "redis",
+  "uvicorn[standard]",
+  "httpx==0.23.3"
+]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"  # настройка pytest-asyncio

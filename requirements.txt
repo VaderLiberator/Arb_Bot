@@ -1,0 +1,6 @@
+fastapi              # веб-фреймворк
+redis	#Redis
+uvicorn[standard]    # ASGI-сервер
+httpx==0.23.3        # HTTP-клиент для воркера (с поддержкой AsyncClient(app=…))
+pytest               # тестовый фреймворк
+pytest-asyncio       # асинхронные тесты
