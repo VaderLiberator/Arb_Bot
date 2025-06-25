@@ -4,23 +4,41 @@
 # Структура проекта:
 
 arb_bot/
+
 ├── api/
+
 │   └── main.py            # FastAPI-приложение с эндпоинтами
+
 ├── core.py	               #  Общая очередь задач для воркера и хранилище их состояний
+
 ├── worker/
+
 │   └── worker.py          # Асинхронный воркер для обработки задач
+
 ├── mock/
+
 │   └── exchange.py        # Заглушки order book для Exchange A и B
+
 ├── models.py              # Pydantic-модели запросов и ответов
+
 ├── pytest.ini	           # Задание корня модулей для pytest
+
 ├── utils.py               # Утилитарные функции для расчёта цен и спреда
+
 ├── requirements.txt       # Список зависимостей
+
 ├── pyproject.toml         # Конфигурация проекта (PEP 621)
+
 ├── README.md              # Инструкция по запуску
+
 ├── Dockerfile             # Запуск в Docker
+
 └── tests/
+
     ├── test_utils.py      # тесты для utils.py
+    
     ├── test_api.py        # тесты для эндпоинтов через httpx
+    
     └── test_worker.py     # тест воркера с моками и арбитражной возможностью с заданным объемом
 
 # Установка (powershell windows)
